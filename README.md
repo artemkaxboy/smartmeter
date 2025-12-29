@@ -2,6 +2,10 @@
 
 Custom integration for Smart Meter Gateway by Connectix for Home Assistant.
 
+## Icon
+
+The integration includes a custom icon that will be displayed in the Home Assistant integrations list.
+
 ## Features
 
 This integration provides sensors for:
