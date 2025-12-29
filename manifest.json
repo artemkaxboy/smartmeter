@@ -1,0 +1,14 @@
+{
+  "domain": "smartmeter",
+  "name": "Smart Meter",
+  "codeowners": ["@artemkaxboy"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/artemkaxboy/smartmeter",
+  "homekit": {},
+  "iot_class": "local_polling",
+  "requirements": [],
+  "ssdp": [],
+  "version": "0.0.1",
+  "zeroconf": []
+}

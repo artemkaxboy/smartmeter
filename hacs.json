@@ -1,0 +1,8 @@
+{
+  "name": "Smart Meter",
+  "content_in_root": false,
+  "render_readme": true,
+  "homeassistant": "2024.1.0",
+  "country": ["NL", "BE"],
+  "domains": ["sensor"]
+}
