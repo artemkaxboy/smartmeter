@@ -150,14 +150,14 @@ SENSORS = {
     "GasDeliveredHour": {
         "name": "Gas Delivered Hour",
         "unit": "m³",
-        "device_class": "gas",
+        "device_class": None,
         "state_class": "measurement",
         "icon": "mdi:fire",
     },
     "PowerDeliveredHour": {
         "name": "Power Delivered Hour",
         "unit": "kWh",
-        "device_class": "energy",
+        "device_class": None,
         "state_class": "measurement",
         "icon": "mdi:lightning-bolt",
     },

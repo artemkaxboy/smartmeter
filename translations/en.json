@@ -11,7 +11,7 @@
       }
     },
     "error": {
-        "cannot_connect": "Failed to connect to Smart Meter gateway",
+      "cannot_connect": "Failed to connect to Smart Meter gateway",
       "invalid_data": "Invalid data received from Smart Meter",
       "unknown": "Unexpected error"
     },
