@@ -1,6 +1,22 @@
 # Smart Meter Integration for Home Assistant
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/artemkaxboy/smartmeter/main/logo.png" alt="Smart Meter Logo" width="128">
+</p>
+
+<p align="center">
+  <a href="https://github.com/hacs/integration">
+    <img src="https://img.shields.io/badge/HACS-Custom-41BDF5.svg" alt="HACS Custom">
+  </a>
+  <a href="https://github.com/artemkaxboy/smartmeter">
+    <img src="https://img.shields.io/github/v/release/artemkaxboy/smartmeter?include_prereleases" alt="GitHub release">
+  </a>
+</p>
+
 Custom integration for Smart Meter Gateway by Connectix for Home Assistant.
+
+> **⚠️ Version 1.1.0 Update Notice**  
+> Entity IDs have been improved for better readability. After updating, your existing entities will get new names (e.g., `energydeliveredtariff1` → `energy_delivered_tariff_1`). You may need to update your automations, scripts, and dashboards to use the new entity IDs.
 
 ## Icon
 
@@ -29,7 +45,7 @@ This integration provides sensors for:
    - Select "Custom repositories"
    - Add repository URL: `https://github.com/artemkaxboy/smartmeter`
    - Category: Integration
-
+   
 2. Install the integration through HACS
 3. Restart Home Assistant
 
@@ -59,7 +75,7 @@ To use the energy sensors in Home Assistant's Energy Dashboard:
 
 ## Sensors
 
-The integration creates the following sensors:
+The integration creates the following sensors with readable entity IDs:
 
 ### Energy Sensors
 - `sensor.smartmeter_energy_delivered_tariff_1` - Energy consumed (Tariff 1)

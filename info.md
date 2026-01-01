@@ -1,5 +1,7 @@
 # Smart Meter Integration
 
+<img src="https://raw.githubusercontent.com/artemkaxboy/smartmeter/main/logo.png" alt="Smart Meter" width="100" align="right">
+
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
 
 ## Features

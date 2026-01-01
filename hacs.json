@@ -4,5 +4,6 @@
   "render_readme": true,
   "homeassistant": "2024.1.0",
   "country": ["NL", "BE"],
-  "domains": ["sensor"]
+  "domains": ["sensor"],
+  "iot_class": "Local Polling"
 }

@@ -16,6 +16,29 @@ from .const import DOMAIN, SENSORS
 _LOGGER = logging.getLogger(__name__)
 
 
+def format_entity_id(sensor_key: str) -> str:
+    """Format sensor key to a proper entity ID with underscores."""
+    import re
+    
+    # Special handling for keys with existing underscores (like PowerDelivered_l1)
+    if "_l" in sensor_key.lower():
+        # Split by existing underscore
+        parts = sensor_key.split("_")
+        base = parts[0]
+        suffix = "_" + "_".join(parts[1:]).lower()
+        # Add underscores between camelCase in base part
+        base = re.sub(r'(?<!^)(?=[A-Z])', '_', base).lower()
+        return base + suffix
+    
+    # Handle Tariff1, Tariff2 -> tariff_1, tariff_2
+    result = re.sub(r'Tariff(\d)', r'Tariff_\1', sensor_key)
+    
+    # Convert camelCase to snake_case
+    result = re.sub(r'(?<!^)(?=[A-Z])', '_', result).lower()
+    
+    return result
+
+
 async def async_setup_entry(
     hass: HomeAssistant,
     config_entry: ConfigEntry,
@@ -53,10 +76,13 @@ class SmartMeterSensor(CoordinatorEntity, SensorEntity):
         self._sensor_key = sensor_key
         self._sensor_config = sensor_config
         
+        # Format the sensor key for entity ID
+        formatted_key = format_entity_id(sensor_key)
+        
         # Set unique ID and entity ID
         mac = coordinator.data.get("mac_address", "unknown").replace("_", "").replace(":", "").lower()
-        self._attr_unique_id = f"{mac}_{sensor_key.lower()}"
-        self.entity_id = f"sensor.smartmeter_{sensor_key.lower()}"
+        self._attr_unique_id = f"{mac}_{formatted_key}"
+        self.entity_id = f"sensor.smartmeter_{formatted_key}"
         
         # Set name
         self._attr_name = sensor_config["name"]
@@ -115,7 +141,7 @@ class SmartMeterSensor(CoordinatorEntity, SensorEntity):
         attributes = {}
         
         # Add some extra metadata if this is the main energy sensor
-        if self._sensor_key == "energy_delivered_tariff_1":
+        if self._sensor_key == "EnergyDeliveredTariff1":
             attributes["equipment_id"] = self.coordinator.data.get("Equipment_Id")
             attributes["gas_equipment_id"] = self.coordinator.data.get("GasEquipment_Id")
             attributes["startup_time"] = self.coordinator.data.get("startup_time")
