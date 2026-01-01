@@ -115,7 +115,7 @@ class SmartMeterSensor(CoordinatorEntity, SensorEntity):
         attributes = {}
         
         # Add some extra metadata if this is the main energy sensor
-        if self._sensor_key == "EnergyDeliveredTariff1":
+        if self._sensor_key == "energy_delivered_tariff_1":
             attributes["equipment_id"] = self.coordinator.data.get("Equipment_Id")
             attributes["gas_equipment_id"] = self.coordinator.data.get("GasEquipment_Id")
             attributes["startup_time"] = self.coordinator.data.get("startup_time")

@@ -53,27 +53,27 @@ To use the energy sensors in Home Assistant's Energy Dashboard:
 
 1. Go to **Settings** → **Dashboards** → **Energy**
 2. Configure:
-   - **Grid consumption**: Select `sensor.smartmeter_energydeliveredtariff1` and `sensor.smartmeter_energydeliveredtariff2`
-   - **Return to grid**: Select `sensor.smartmeter_energyreturnedtariff1` and `sensor.smartmeter_energyreturnedtariff2`
-   - **Gas consumption**: Select `sensor.smartmeter_gasdelivered`
+   - **Grid consumption**: Select `sensor.smartmeter_energy_delivered_tariff_1` and `sensor.smartmeter_energy_delivered_tariff_2`
+   - **Return to grid**: Select `sensor.smartmeter_energy_returned_tariff_1` and `sensor.smartmeter_energy_returned_tariff_2`
+   - **Gas consumption**: Select `sensor.smartmeter_gas_delivered`
 
 ## Sensors
 
 The integration creates the following sensors:
 
 ### Energy Sensors
-- `sensor.smartmeter_energydeliveredtariff1` - Energy consumed (Tariff 1)
-- `sensor.smartmeter_energydeliveredtariff2` - Energy consumed (Tariff 2)
-- `sensor.smartmeter_energyreturnedtariff1` - Energy returned (Tariff 1)
-- `sensor.smartmeter_energyreturnedtariff2` - Energy returned (Tariff 2)
+- `sensor.smartmeter_energy_delivered_tariff_1` - Energy consumed (Tariff 1)
+- `sensor.smartmeter_energy_delivered_tariff_2` - Energy consumed (Tariff 2)
+- `sensor.smartmeter_energy_returned_tariff_1` - Energy returned (Tariff 1)
+- `sensor.smartmeter_energy_returned_tariff_2` - Energy returned (Tariff 2)
 
 ### Power Sensors
-- `sensor.smartmeter_powerdelivered_total` - Current total power usage (kW)
-- `sensor.smartmeter_powerreturned_total` - Current total power return (kW)
-- `sensor.smartmeter_powerdelivered_l1` - Power usage Phase 1 (W)
-- `sensor.smartmeter_powerdelivered_l2` - Power usage Phase 2 (W)
-- `sensor.smartmeter_powerdelivered_l3` - Power usage Phase 3 (W)
-- `sensor.smartmeter_powerdeliverednetto` - Netto power usage (W)
+- `sensor.smartmeter_power_delivered_total` - Current total power usage (kW)
+- `sensor.smartmeter_power_returned_total` - Current total power return (kW)
+- `sensor.smartmeter_power_delivered_l1` - Power usage Phase 1 (W)
+- `sensor.smartmeter_power_delivered_l2` - Power usage Phase 2 (W)
+- `sensor.smartmeter_power_delivered_l3` - Power usage Phase 3 (W)
+- `sensor.smartmeter_power_delivered_netto` - Netto power usage (W)
 
 ### Voltage & Current Sensors
 - `sensor.smartmeter_voltage_l1` - Voltage Phase 1 (V)
@@ -84,11 +84,11 @@ The integration creates the following sensors:
 - `sensor.smartmeter_current_l3` - Current Phase 3 (A)
 
 ### Gas Sensors
-- `sensor.smartmeter_gasdelivered` - Total gas consumption (m³)
-- `sensor.smartmeter_gasdeliveredhour` - Hourly gas consumption (m³)
+- `sensor.smartmeter_gas_delivered` - Total gas consumption (m³)
+- `sensor.smartmeter_gas_delivered_hour` - Hourly gas consumption (m³)
 
 ### Device Status
-- `sensor.smartmeter_electricitytariff` - Current electricity tariff
+- `sensor.smartmeter_electricity_tariff` - Current electricity tariff
 - `sensor.smartmeter_wifi_rssi` - WiFi signal strength (dBm)
 - `sensor.smartmeter_firmware_running` - Current firmware version
 - `sensor.smartmeter_firmware_update_available` - Firmware update availability

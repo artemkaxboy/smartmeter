@@ -14,161 +14,161 @@ API_ENDPOINT = "/smartmeter/api/read"
 
 # Sensor definitions with units and device classes
 SENSORS = {
-    "EnergyDeliveredTariff1": {
+    "energy_delivered_tariff_1": {
         "name": "Energy Delivered Tariff 1",
         "unit": "kWh",
         "device_class": "energy",
         "state_class": "total_increasing",
         "icon": "mdi:lightning-bolt",
     },
-    "EnergyDeliveredTariff2": {
+    "energy_delivered_tariff_2": {
         "name": "Energy Delivered Tariff 2",
         "unit": "kWh",
         "device_class": "energy",
         "state_class": "total_increasing",
         "icon": "mdi:lightning-bolt",
     },
-    "EnergyReturnedTariff1": {
+    "energy_returned_tariff_1": {
         "name": "Energy Returned Tariff 1",
         "unit": "kWh",
         "device_class": "energy",
         "state_class": "total_increasing",
         "icon": "mdi:solar-power",
     },
-    "EnergyReturnedTariff2": {
+    "energy_returned_tariff_2": {
         "name": "Energy Returned Tariff 2",
         "unit": "kWh",
         "device_class": "energy",
         "state_class": "total_increasing",
         "icon": "mdi:solar-power",
     },
-    "PowerDelivered_total": {
+    "power_delivered_total": {
         "name": "Power Delivered Total",
         "unit": "kW",
         "device_class": "power",
         "state_class": "measurement",
         "icon": "mdi:flash",
     },
-    "PowerReturned_total": {
+    "power_returned_total": {
         "name": "Power Returned Total",
         "unit": "kW",
         "device_class": "power",
         "state_class": "measurement",
         "icon": "mdi:solar-power-variant",
     },
-    "PowerDelivered_l1": {
+    "power_delivered_l1": {
         "name": "Power Delivered L1",
         "unit": "W",
         "device_class": "power",
         "state_class": "measurement",
         "icon": "mdi:flash",
     },
-    "PowerDelivered_l2": {
+    "power_delivered_l2": {
         "name": "Power Delivered L2",
         "unit": "W",
         "device_class": "power",
         "state_class": "measurement",
         "icon": "mdi:flash",
     },
-    "PowerDelivered_l3": {
+    "power_delivered_l3": {
         "name": "Power Delivered L3",
         "unit": "W",
         "device_class": "power",
         "state_class": "measurement",
         "icon": "mdi:flash",
     },
-    "PowerReturned_l1": {
+    "power_returned_l1": {
         "name": "Power Returned L1",
         "unit": "W",
         "device_class": "power",
         "state_class": "measurement",
         "icon": "mdi:solar-power-variant",
     },
-    "PowerReturned_l2": {
+    "power_returned_l2": {
         "name": "Power Returned L2",
         "unit": "W",
         "device_class": "power",
         "state_class": "measurement",
         "icon": "mdi:solar-power-variant",
     },
-    "PowerReturned_l3": {
+    "power_returned_l3": {
         "name": "Power Returned L3",
         "unit": "W",
         "device_class": "power",
         "state_class": "measurement",
         "icon": "mdi:solar-power-variant",
     },
-    "Voltage_l1": {
+    "voltage_l1": {
         "name": "Voltage L1",
         "unit": "V",
         "device_class": "voltage",
         "state_class": "measurement",
         "icon": "mdi:sine-wave",
     },
-    "Voltage_l2": {
+    "voltage_l2": {
         "name": "Voltage L2",
         "unit": "V",
         "device_class": "voltage",
         "state_class": "measurement",
         "icon": "mdi:sine-wave",
     },
-    "Voltage_l3": {
+    "voltage_l3": {
         "name": "Voltage L3",
         "unit": "V",
         "device_class": "voltage",
         "state_class": "measurement",
         "icon": "mdi:sine-wave",
     },
-    "Current_l1": {
+    "current_l1": {
         "name": "Current L1",
         "unit": "A",
         "device_class": "current",
         "state_class": "measurement",
         "icon": "mdi:current-ac",
     },
-    "Current_l2": {
+    "current_l2": {
         "name": "Current L2",
         "unit": "A",
         "device_class": "current",
         "state_class": "measurement",
         "icon": "mdi:current-ac",
     },
-    "Current_l3": {
+    "current_l3": {
         "name": "Current L3",
         "unit": "A",
         "device_class": "current",
         "state_class": "measurement",
         "icon": "mdi:current-ac",
     },
-    "GasDelivered": {
+    "gas_delivered": {
         "name": "Gas Delivered Total",
         "unit": "m³",
         "device_class": "gas",
         "state_class": "total_increasing",
         "icon": "mdi:fire",
     },
-    "GasDeliveredHour": {
+    "gas_delivered_hour": {
         "name": "Gas Delivered Hour",
         "unit": "m³",
         "device_class": None,
         "state_class": "measurement",
         "icon": "mdi:fire",
     },
-    "PowerDeliveredHour": {
+    "power_delivered_hour": {
         "name": "Power Delivered Hour",
         "unit": "kWh",
         "device_class": None,
         "state_class": "measurement",
         "icon": "mdi:lightning-bolt",
     },
-    "PowerDeliveredNetto": {
+    "power_delivered_netto": {
         "name": "Power Delivered Netto",
         "unit": "W",
         "device_class": "power",
         "state_class": "measurement",
         "icon": "mdi:flash",
     },
-    "ElectricityTariff": {
+    "electricity_tariff": {
         "name": "Electricity Tariff",
         "unit": None,
         "device_class": None,
