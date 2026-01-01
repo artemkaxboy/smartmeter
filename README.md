@@ -29,7 +29,7 @@ This integration provides sensors for:
    - Select "Custom repositories"
    - Add repository URL: `https://github.com/artemkaxboy/smartmeter`
    - Category: Integration
-   
+
 2. Install the integration through HACS
 3. Restart Home Assistant
 
